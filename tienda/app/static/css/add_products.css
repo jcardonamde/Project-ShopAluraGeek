@@ -1,0 +1,87 @@
+body {
+    background-color: var(--background-main);
+    font-family: var(--Raleway);
+}
+
+.container__register_product {
+    height: 120vh;
+    margin-top: 20px;
+    padding: 0px;
+    width: 423px;
+}
+
+.container__register_product-label {
+    font-family: var(--Raleway);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container__alerta_register-product {
+    margin: 0;
+    text-align: center;
+}
+
+.container__product_name, .container__product_price, .container__product_category {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    height: 55px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.container__product_category-root {
+    color: var(--text-content-product-category);
+}
+
+.container__product_description {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    height: 80px;
+    margin-top: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.container__product_favorite {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.container__product_url-img {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    height: 85px;
+    margin-top: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.container__product_label-expiration {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.container__product_publication-expiration {
+    font-family: var(--Raleway);
+    font-size: 16px;
+    height: 55px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container__add_product-button {
+    font-size: 18.5px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container__add_product-button:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-weight: bold;
+}

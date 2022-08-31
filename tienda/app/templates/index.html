@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/bases.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/products_home.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/footer.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <title>.: Shop Alura Geek :.</title>
+</head>
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar_marca">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"
+                    class="nav__bar_img-logo" />
+                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search" />
+            </div>
+            <div>
+                <a href="/login_user" class="btn btn-outline-primary nav__bar_login-button">Login</a>
+            </div>
+        </nav>
+        <div id="myCarousel" class="carousel slide banner__ppal" data-ride="carousel" data-bs-ride="true" data-interval="3000">
+            <div class="carousel-indicators"> 
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active banner__ppal">
+                    <img src="{{ url_for('static', filename = 'imgs/banners/banner_home1.png') }}" class="d-block w-100 banner__img-slider" alt="imagen banner hongo mario bross">
+                    <div class="banner__ppal_description">
+                        <h1>Septiembre Promocional</h1>
+                        <p>Productos seleccionados con 33% de descuento</p>
+                        <input type="submit" value="Ver Consolas" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="carousel-item banner__ppal">
+                    <img src="{{ url_for('static', filename = 'imgs/banners/banner_home2.jpg') }}" class="d-block w-100 banner__img-slider" alt="imagen banner star wars">
+                    <div class="banner__ppal_description2">
+                        <h1>Elige tu lado</h1>
+                        <p>Despierta la fuerza en tu interior</p>
+                        <input type="submit" value="Únete" class="btn btn-outline-light" />
+                    </div>
+                </div>
+                <div class="carousel-item banner__ppal">
+                    <img src="{{ url_for('static', filename = 'imgs/banners/banner_home3.jpg') }}" class="d-block w-100 banner__img-slider" alt="imagen banner superheroes marvel">
+                    <div class="banner__ppal_description3-title">
+                        <h1>¿Te gustan los superhéroes? </h1>
+                    </div>
+                    <div class="banner__ppal_description3-subtitle">
+                        <p>Todo su contenido exclusivo<br> lo encuentras aquí</p>
+                    </div>
+                    <div class="banner__ppal_description3-btn">
+                        <input type="submit" value="Descubrelos Ahora" class="btn btn-outline-warning banner__ppal_description3-button" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section__home">
+            <section class="section__container_category">
+                <div class="section__tittle_category">
+                    <h3>Star Wars</h3>
+                    <div class="section__see_category">
+                        <p>Ver todo</p>
+                        <img src="/static/imgs/row_right.png" alt="ver toda la categoria"
+                            class="section__see_category-row" />
+                    </div>
+                </div>
+                <div class="section__products_category">
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/star-wars1.png" alt="producto star wars 1" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="/view/product" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/star-wars2.jpg" alt="producto star wars 2" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/star-wars3.jpg" alt="producto star wars 3" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/star-wars4.jpg" alt="producto star wars 4" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                            alt="producto star wars 5" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="producto star wars 6" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section__container_category">
+                <div class="section__tittle_category">
+                    <h3>Consolas</h3>
+                    <div class="section__see_category">
+                        <p>Ver todo</p>
+                        <img src="/static/imgs/row_right.png" alt="ver toda la categoria"
+                            class="section__see_category-row" />
+                    </div>
+                </div>
+                <div class="section__products_category">
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/consola1.png" alt="producto consolas 1" />
+                        <p class="section__product_name">Control XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/consola2.jpg" alt="producto consolas 2" />
+                        <p class="section__product_name">Control y consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1533702165324-66678e2069b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="producto consolas 3" />
+                        <p class="section__product_name">Consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="producto consolas 4" />
+                        <p class="section__product_name">Control XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/consola5.jpg" alt="producto consolas 5" />
+                        <p class="section__product_name">Consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1577583113753-ca7e95d1bdc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="producto consolas 6" />
+                        <p class="section__product_name">Game Boy Color</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section__container_category">
+                <div class="section__tittle_category">
+                    <h3>Diversos</h3>
+                    <div class="section__see_category">
+                        <p>Ver todo</p>
+                        <img src="/static/imgs/row_right.png" alt="ver toda la categoria"
+                            class="section__see_category-row" />
+                    </div>
+                </div>
+                <div class="section__products_category">
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1589021818993-a1223f8f0f04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80"
+                            alt="producto geek 1" />
+                        <p class="section__product_name">Camisa Atari</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1554410637-1a8267402b57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="producto geek 2" />
+                        <p class="section__product_name">Camisa SNES</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/diversos3.png" alt="producto geek 3" />
+                        <p class="section__product_name">Control y consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1611946258523-9c2bfabb94e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=771&q=80"
+                            alt="producto geek 4" />
+                        <p class="section__product_name">Control y consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="/static/imgs/products_categories/diversos5.jpg" alt="producto geek 5" />
+                        <p class="section__product_name">Control y consola XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                    <div class="section__products_product-description">
+                        <img src="https://images.unsplash.com/photo-1609372332255-611485350f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="producto geek 6" />
+                        <p class="section__product_name">Producto XYZ</p>
+                        <p class="section__product_price">$ 60.00</p>
+                        <a href="#" class="section__product_see-product">Ver producto</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="cookie">
+            <img class="cookie__alert" src="{{ url_for('static', filename = 'imgs/cookie_icon.png') }}" alt="logo de alerta para cookies" />
+            <div class="cookie__text">
+                <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa con la navegación, consideraremos que acepta este uso. Puedes obtener más información en nuestra <a href="#">Política de Cookies.</a></p>
+            </div> 
+            <button class="btn btn-dark cookie__button" onclick="acceptAction()">Aceptar</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__container_elements">
+            <div class="footer__elements_logo">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="" />
+            </div>
+            <div class="footer__elements_faq">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúncie aquí</a>
+            </div>
+            <div class="form-group mb-3 footer__elements_contact_us">
+                <label for="name_person" class="footer__label_contact_us mb-2">Hable con nosotros</label>
+                <input type="text" name="name_person" id="name_person" placeholder="Nombre"
+                    class="form-control form-control-lg mb-3 footer__input_contact_us" />
+                <textarea name="message" id="message" rows="3" placeholder="Escribe tu mensaje"
+                    class="form-control form-control-lg mb-2 footer__textarea_contact_us"></textarea>
+                <input type="submit" value="Enviar mensaje" class="btn btn-primary footer__button_contact_us" />
+            </div>
+        </div>
+        <div class="footer__created_by">
+            <a href="https://github.com/jcardonamde" target="_blank" rel="noopener noreferrer">Develop by:
+                Jcardonamde.</a><br />
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='/js/index.js') }}"></script>
+</body>
+</html>

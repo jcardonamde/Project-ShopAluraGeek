@@ -1,0 +1,36 @@
+body {
+    background-color: var(--background-main);
+    font-family: var(--Raleway);
+}
+
+.main__admin-products {
+    margin-top: 80px;
+}
+
+.container__table-principal p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.table__product_image {
+    height: 100px;
+    width: 100px;
+}
+
+.table__product_description {
+    width: 230px;
+}
+
+.table__favorite_products_headers, .table__past_products_headers {
+    text-align: center;
+}
+
+.table__general_products {
+    margin-top: 40px;
+}
+
+.table__past_products {
+    width: 50%;
+}
+
+

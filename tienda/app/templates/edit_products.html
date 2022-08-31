@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/bases.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/edit_products.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/footer.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>.: Edit Products | Shop Alura Geek :.</title>
+</head>
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar_marca">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="nav__bar_img-logo">
+                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search">
+            </div>
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <p>{{user.name}} {{user.last_name}}</p>
+                    <img src="{{ url_for('static', filename = 'imgs/user_icon.png') }}" alt="Logo perfil usuario">
+                </div>
+                <ul>
+                    <li><a href="/update_user">Cuenta</a></li>
+                    <li><a href="/admin_products">Productos</a></li>
+                    <li><a href="/logout">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container p-1 col-5 container__register_product">
+            <h4 class="container__register_product-label mt-4">Editar Producto</h4>
+            <div id="mensajeAlertaActualizarProducto" class="container__alerta_register-product"></div>
+            <form action="/update/product" method="post" class="container__register_form" id="formUpdateProduct">
+                <input type="hidden" name="user_id" value="{{user.id}}">
+                <input type="hidden" name="id" value="{{product.id}}">
+                <div class="form-group">
+                    <input type="text" name="name_prod" id="name_prod" placeholder="Ingrese Nombre del Producto" class="form-control container__product_name" value="{{product.name_prod}}">
+                </div>
+                <div class="form-group">
+                    <textarea rows="10" name="description" id="description" placeholder="Ingrese descripción del Producto" class="form-control container__product_description">{{product.description}}</textarea>
+                </div>
+                <div class="form-group">
+                    <input step="any" type="number" name="price_prod" id="price_prod" placeholder="Ingrese el precio del Producto" class="form-control container__product_price" value="{{product.price_prod}}">
+                </div>
+                <div class="form-group">
+                    <select class="form-control container__product_category" id="category" name="category">
+                        <option value="" selected="selected"><b class="container__product_category-root">{{product.category}}</b></option>
+                        <option value="StarWars">StarWars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="DC Comics">DC Comics</option>
+                        <option value="Manga">Manga</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="favorite" class="container__product_favorite">¿Es un producto favorito?</label>
+                        <input type="radio" name="favorite" id="favoriteYES" value="1" {% if product.favorite == 1 %} checked {% endif %}>
+                        <label for="favoriteYES">Si</label>
+                        <input type="radio" name="favorite" id="favoriteNO" value="0" class="ml-5" {% if product.favorite == 0 %} checked {% endif %}>
+                        <label for="favoriteNO">No</label>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" name="url_img" id="url_img" placeholder="Ingrese la URL de la imagen" class="form-control container__product_url-img">{{product.url_img}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label class="text-black container__product_label-expiration" for="publication_expiration">¿Cuando expira la publicación?</label>
+                    <input type="date" name="publication_expiration" id="publication_expiration" class="form-control container__product_publication-expiration" value="{{product.publication_expiration.strftime('%d-%m-%Y')}}">
+                </div>
+                <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg container__edit_product-button">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container_elements">
+            <div class="footer__elements_logo">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="">
+            </div>
+            <div class="footer__elements_faq">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúncie aquí</a>
+            </div>
+            <div class="form-group mb-3 footer__elements_contact_us">
+                <label for="name_person" class="footer__label_contact_us mb-2">Hable con nosotros</label>
+                <input type="text" name="name_person" id="name_person" placeholder="Nombre" class="form-control form-control-lg mb-3 footer__input_contact_us">
+                <textarea name="message" id="message" rows="3" placeholder="Escribe tu mensaje" class="form-control form-control-lg mb-2 footer__textarea_contact_us"></textarea>
+                <input type="submit" value="Enviar mensaje" class="btn btn-primary footer__button_contact_us">
+            </div>
+        </div>
+        <div class="footer__created_by">
+            <a href="https://github.com/jcardonamde" target="_blank" rel="noopener noreferrer">Develop by: Jcardonamde.</a><br>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='/js/timeExpirationProduct.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/editProduct.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: var(--background-main);
+    font-family: var(--Raleway);
+}
+
+.container__register_product {
+    height: 115vh;
+    margin-top: 20px;
+    padding: 0px;
+    width: 423px;
+}
+
+.container__register_product-label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container__alerta_register-product {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.container__product_name, .container__product_price, .container__product_category {
+    font-size: 16px;
+    height: 55px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.container__product_description {
+    font-size: 16px;
+    height: 80px;
+    margin-top: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.container__product_favorite, .container__product_label-expiration {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.container__product_url-img {
+    font-size: 16px;
+    height: 85px;
+    margin-top: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.container__product_publication-expiration {
+    font-size: 16px;
+    height: 55px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container__edit_product-button {
+    font-size: 18.5px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container__edit_product-button:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-weight: bold;
+}

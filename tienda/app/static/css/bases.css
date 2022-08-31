@@ -1,0 +1,39 @@
+:root {
+    /* Color principal */
+    --background-logo: #2A7AE4;
+    --background-content: #EAF2FD;
+    --background-header: #FFFFFF;
+    --background-main: #E5E5E5;
+    --background-footer: #FFFFFF;
+
+    /* Color secundario */
+    --background-hover-button: #FFC300;
+    --background-hover-button2: #DC3545;
+    --background-hover-button3: #FFFFFF;
+    --text-search-bar: #F5F5F5;
+    --text-links-nav: #000000;
+    --text-content: #FFFFFF;
+    --text-content-user-name: #000000;
+    --text-content-title-category: #464646;
+    --text-content-see-category: #0B5ED7;
+    --text-content-product-name: #464646;
+    --text-content-product-price: #464646;
+    --text-content-product-category: #464646;
+    --text-content-product-see: #2A7AE4;
+    --text-content-link-cookie: #2A7AE4;
+    --text-content-footer: #464646;
+    --text-content-hover1: #0B5ED7;
+    --text-content-hover2: #FFC300;
+    --text-content-hover3: #DC3545;
+    
+    /*Fuente proyecto*/ 
+    --Raleway: 'Raleway', sans-serif; /*Fuente de Marca */
+    /*Fuente contenidos globales*/
+    --Roboto: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

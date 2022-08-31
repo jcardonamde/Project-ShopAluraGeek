@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/bases.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/products_home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/footer.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>.: View Products | Shop Alura Geek :.</title>
+</head>
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar_marca">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="nav__bar_img-logo">
+                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search">
+            </div>
+            <div>
+                <a href="/home">
+                    <img src="/static/imgs/home_icon.png" alt="icono de regreso al home" class="nav__bar_logo_home">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container__view_product">
+                <img src="" alt="">
+                <div>
+                    <h4>Producto XYZ</h4>
+                    <p>$60.00</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut natus obcaecati totam adipisci voluptatibus, neque minima voluptates dolore ipsam provident magni ullam, repellendus delectus? Id dignissimos ipsum cupiditate, optio iure asperiores! Sapiente itaque esse pariatur, recusandae quam consequuntur perferendis quas, sequi illum quos corrupti enim, quo beatae! Doloremque, delectus culpa.</p>
+                </div>
+            </div>
+            <div class="section__tittle_category">
+                <h3>Star Wars</h3>
+                <div class="section__see_category">
+                    <p>Ver todo</p>
+                    <img src="/static/imgs/row_right.png" alt="ver toda la categoria"
+                        class="section__see_category-row" />
+                </div>
+            </div>
+            <div class="section__products_category">
+                <div class="section__products_product-description">
+                    <img src="/static/imgs/products_categories/star-wars1.png" alt="producto star wars 1" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+                <div class="section__products_product-description">
+                    <img src="/static/imgs/products_categories/star-wars2.jpg" alt="producto star wars 2" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+                <div class="section__products_product-description">
+                    <img src="/static/imgs/products_categories/star-wars3.jpg" alt="producto star wars 3" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+                <div class="section__products_product-description">
+                    <img src="/static/imgs/products_categories/star-wars4.jpg" alt="producto star wars 4" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+                <div class="section__products_product-description">
+                    <img src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                        alt="producto star wars 5" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+                <div class="section__products_product-description">
+                    <img src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="producto star wars 6" />
+                    <p class="section__product_name">Producto XYZ</p>
+                    <p class="section__product_price">$ 60.00</p>
+                    <a href="#" class="section__product_see-product">Ver producto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container_elements">
+            <div class="footer__elements_logo">
+                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="">
+            </div>
+            <div class="footer__elements_faq">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúncie aquí</a>
+            </div>
+            <div class="form-group mb-3 footer__elements_contact_us">
+                <label for="name_person" class="footer__label_contact_us mb-2">Hable con nosotros</label>
+                <input type="text" name="name_person" id="name_person" placeholder="Nombre" class="form-control form-control-lg mb-3 footer__input_contact_us">
+                <textarea name="message" id="message" rows="3" placeholder="Escribe tu mensaje" class="form-control form-control-lg mb-2 footer__textarea_contact_us"></textarea>
+                <input type="submit" value="Enviar mensaje" class="btn btn-primary footer__button_contact_us">
+            </div>
+        </div>
+        <div class="footer__created_by">
+            <a href="https://github.com/jcardonamde" target="_blank" rel="noopener noreferrer">Develop by: Jcardonamde.</a><br>
+            <p>2022</p>
+        </div>
+    </footer>
+</body>
+</html>

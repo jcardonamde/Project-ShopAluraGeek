@@ -1,0 +1,207 @@
+.nav__bar {
+    align-items: center;
+    background-color: var(--background-header);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+}
+
+.nav__bar_marca {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 150px;
+}
+
+.nav__bar_search {
+    background-color: var(--text-search-bar);
+    background-image: url('/static/imgs/search_dark.png');
+    background-position: 375px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: 2px solid var(--text-search-bar);
+    border-radius: 20px;
+    font-family: var(--Raleway);
+    font-size: 15px;
+    margin-left: 40px;
+    width: 410px;
+}
+
+.nav__bar_search:focus {
+    outline: none;
+    background-image: none;
+}
+
+.nav__bar_login-button {
+    font-size: 17px;
+    margin-right: 150px;
+    padding: 10px;
+    width: 170px;
+}
+
+.nav__bar_logo_home {
+    height: 50px;
+    margin-right: 140px;
+    width: 50px;
+}
+
+.header__menu--profile {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin-right: 8px;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 65px;
+}
+
+.header__menu--profile p {
+    color: var(--text-content-user-name);
+    margin: 0px;
+    padding: 0;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    margin-left: 40px;
+    padding: 0px;
+    position: absolute;
+    text-align: right;
+    width: 100px;
+}
+
+.header__menu li {
+    margin-top: 5px;
+}
+
+.header__menu li a {
+    color: var(--text-content-user-name);
+    text-decoration: none;
+}
+
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+.banner__ppal {
+    position: relative;
+    width: 100%;
+}
+
+/*
+.banner__img {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+*/
+
+.banner__img-slider {
+    height: 370px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner__ppal_description {
+    position: absolute;
+    left: 190px;
+    top: 155px;
+}
+
+.banner__ppal_description h1 {
+    color: var(--text-content);
+    font-size: 47px;
+}
+
+.banner__ppal_description p  {
+    color: var(--text-content);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.banner__ppal_description2 {
+    position: absolute;
+    left: 55px;
+    top: 173px;
+}
+
+.banner__ppal_description2 h1 {
+    color: var(--text-content);
+    font-size: 45px;
+}
+
+.banner__ppal_description2 p {
+    color: var(--text-content);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.banner__ppal_description input, .banner__ppal_description2 input {
+    border-radius: 0;
+    font-family: var(--Raleway);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 130px;
+}
+
+.banner__ppal_description3-title {
+    color: var(--text-content);
+    font-size: 47px;
+    position: absolute;
+    left: 200px;
+    top: 140px;
+}
+
+.banner__ppal_description3-title h1 {
+    width: 60%;
+}
+
+.banner__ppal_description3-subtitle {
+    color: var(--text-content);
+    font-size: 22px;
+    position: absolute;
+    left: 1050px;
+    top: 140px;
+}
+
+.banner__ppal_description3-subtitle p {
+    width: 100%;
+}
+
+.banner__ppal_description3-btn {
+    color: var(--text-content);
+    font-size: 22px;
+    position: absolute;
+    left: 1050px;
+    top: 220px;
+}
+
+.banner__ppal_description3-button {
+    border-radius: 0;
+    font-family: var(--Raleway);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 170px;
+}
+
+.banner__ppal_description input:hover, .banner__ppal_description2 input:hover, .banner__ppal_description3-button:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-family: var(--Raleway);
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner__ppal_description input:focus, .banner__ppal_description2 input:focus, .banner__ppal_description3 input:focus {
+    box-shadow: none;
+}

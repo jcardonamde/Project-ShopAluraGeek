@@ -1,0 +1,1 @@
+publication_expiration.min = new Date().toISOString().split("T")[0];
