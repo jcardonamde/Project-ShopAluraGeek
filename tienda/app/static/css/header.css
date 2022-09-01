@@ -205,3 +205,23 @@
 .banner__ppal_description input:focus, .banner__ppal_description2 input:focus, .banner__ppal_description3 input:focus {
     box-shadow: none;
 }
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .nav__bar {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav__bar_marca {
+        margin: 0;
+    }
+
+    .nav__bar_search {
+        margin: 0 0 0 15px;
+    }
+
+    .nav__bar_logo_home {
+        margin: 0 0 0 50px;
+    }
+}

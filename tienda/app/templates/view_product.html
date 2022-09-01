@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/bases.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/products_home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/view_products.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/footer.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -28,61 +29,56 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="container__view_product">
-                <img src="" alt="">
-                <div>
+        <section class="container section__principal_view-product mt-5 mb-5">
+            <div class="container container__view_product mt-3 mb-5">
+                <img src="https://images.unsplash.com/photo-1595309959777-08d5da891d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1343&q=80" alt="imagen de stock del producto" class="container__view_product-img">
+                <div class="container container__view_product-description">
                     <h4>Producto XYZ</h4>
-                    <p>$60.00</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut natus obcaecati totam adipisci voluptatibus, neque minima voluptates dolore ipsam provident magni ullam, repellendus delectus? Id dignissimos ipsum cupiditate, optio iure asperiores! Sapiente itaque esse pariatur, recusandae quam consequuntur perferendis quas, sequi illum quos corrupti enim, quo beatae! Doloremque, delectus culpa.</p>
+                    <p class="container__view_product-description-price">$60.00</p>
+                    <p class="container__view_product-description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut natus obcaecati totam adipisci voluptatibus, neque minima voluptates dolore ipsam provident magni ullam, repellendus delectus? Id dignissimos ipsum cupiditate, optio iure asperiores! Sapiente itaque esse pariatur, recusandae quam consequuntur perferendis quas, sequi illum quos corrupti enim, quo beatae! Doloremque, delectus culpa.</p>
                 </div>
             </div>
-            <div class="section__tittle_category">
-                <h3>Star Wars</h3>
-                <div class="section__see_category">
-                    <p>Ver todo</p>
-                    <img src="/static/imgs/row_right.png" alt="ver toda la categoria"
-                        class="section__see_category-row" />
-                </div>
+            <div class="section__tittle_category2 mt-3">
+                <h3>Productos similares</h3>
             </div>
-            <div class="section__products_category">
+            <div class="section__products_category mb-4">
                 <div class="section__products_product-description">
-                    <img src="/static/imgs/products_categories/star-wars1.png" alt="producto star wars 1" />
+                    <img src="/static/imgs/products_categories/consola1.png" alt="producto star wars 1" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
                 <div class="section__products_product-description">
                     <img src="/static/imgs/products_categories/star-wars2.jpg" alt="producto star wars 2" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
                 <div class="section__products_product-description">
                     <img src="/static/imgs/products_categories/star-wars3.jpg" alt="producto star wars 3" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
                 <div class="section__products_product-description">
                     <img src="/static/imgs/products_categories/star-wars4.jpg" alt="producto star wars 4" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
                 <div class="section__products_product-description">
                     <img src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
                         alt="producto star wars 5" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
                 <div class="section__products_product-description">
                     <img src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                         alt="producto star wars 6" />
                     <p class="section__product_name">Producto XYZ</p>
                     <p class="section__product_price">$ 60.00</p>
-                    <a href="#" class="section__product_see-product">Ver producto</a>
+                    <a href="/view/product" class="section__product_see-product">Ver producto</a>
                 </div>
             </div>
         </section>

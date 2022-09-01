@@ -12,6 +12,19 @@
     margin-bottom: 10px;
 }
 
+.section__tittle_category2 {
+    display: flex;
+    justify-content: left;
+}
+
+.section__tittle_category2 h3 {
+    color: var(--text-content-title-category);
+    font-size: 32px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 820px 20px 0;
+}
+
 .section__tittle_category h3 {
     color: var(--text-content-title-category);
     font-family: var(--Raleway);
@@ -125,7 +138,7 @@
     height: 90px;
     justify-content: space-between;
     position: sticky;
-    bottom: 1px;
+    bottom: 0px;
     z-index: 1;
 }
 
@@ -143,6 +156,7 @@
     font-size: 18px;
     font-weight: 500;
     margin: 10px 0px 0px 0px;
+    text-align: center;
     width: 1200px;
 }
 

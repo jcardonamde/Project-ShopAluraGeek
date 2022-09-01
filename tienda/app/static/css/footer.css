@@ -109,3 +109,39 @@ footer {
     font-weight: bold;
     margin-top: -25px;
 }
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .footer__container_elements {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .footer__elements_logo {
+        margin: 80px 0 0 0;
+    }
+
+    .footer__elements_logo img {
+        margin: 0 0 0 30px;
+    }
+
+    .footer__elements_faq {
+        margin: 0 0 100px 30px;
+    }
+
+    .footer__elements_contact_us {
+        margin: 0;
+        width: 58%;
+        position: absolute;
+        left: 300px ;
+        bottom: 80px;
+    }
+
+    .footer__button_contact_us {
+        height: 45px;
+        margin-left: 3px;
+        width: 160px;
+    }
+}

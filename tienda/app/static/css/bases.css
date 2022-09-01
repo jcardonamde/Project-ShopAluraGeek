@@ -5,6 +5,7 @@
     --background-header: #FFFFFF;
     --background-main: #E5E5E5;
     --background-footer: #FFFFFF;
+    --background-404: #138FF2;
 
     /* Color secundario */
     --background-hover-button: #FFC300;
@@ -18,10 +19,12 @@
     --text-content-see-category: #0B5ED7;
     --text-content-product-name: #464646;
     --text-content-product-price: #464646;
+    --text-content-product-price2: #0B5ED7;
     --text-content-product-category: #464646;
     --text-content-product-see: #2A7AE4;
     --text-content-link-cookie: #2A7AE4;
     --text-content-footer: #464646;
+    --text-content-404: #138FF2;
     --text-content-hover1: #0B5ED7;
     --text-content-hover2: #FFC300;
     --text-content-hover3: #DC3545;
