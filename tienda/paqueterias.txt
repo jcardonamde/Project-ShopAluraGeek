@@ -1,3 +1,1 @@
-pipenv install flask PyMySQL flash flask-bcrypt Flask-Mail python-decouple
-
-pipenv install python-decouple
+pipenv install flask PyMySQL flash flask-bcrypt flask-mail python-decouple

@@ -8,7 +8,7 @@ def send_async_mail(message):
         mail.send(message)
 
 def welcome_mail(user):
-    message = Message('Bienvenido a el proyecto de Jonathan Cardona Bootcamp Coding Dojo', sender=current_app.config['MAIL_USERNAME'], recipients=[user.email])
+    message = Message('Bienvenido a Alura Geek Shop', sender=current_app.config['MAIL_USERNAME'], recipients=[user.email])
     message.html = render_template('email/welcome.html', user=user)
     thread = Thread(target = send_async_mail, args=[message])
     thread.start()

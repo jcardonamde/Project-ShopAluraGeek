@@ -1,11 +1,13 @@
-from flask import render_template, redirect, session, request, flash, jsonify
 from app import app
+from flask import render_template, redirect, session, request, flash, jsonify
+from flask_mail import Mail, Message
+from app.email import welcome_mail
 from app.models.users import User
 from app.models.products import Product
-#from email import welcome_mail
 
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)
+mail = Mail(app)
 
 @app.errorhandler(404)
 def page_not_found(error):
@@ -48,7 +50,16 @@ def add_user():
         "password" : pwd
     }
     id  = User.save(formulario)
+    #welcome_mail(user)
     session['usuario_id'] = id
+    
+    if request.method == 'POST':
+        msg = Message("¡Bienvenido a Bordo!", sender='noreply@demo.com', recipients = ['yotomc17@gmail.com'])
+        #msg.body = 'Hola, tu usuario se ha creado exisotamente'
+        msg.html = render_template('email/welcome.html', user = request.form['name'])
+        mail.send(msg)
+        #return "Sent email."
+    
     return jsonify(message = "Registro Creado Exitosamente")
 
 @app.route('/update_user')

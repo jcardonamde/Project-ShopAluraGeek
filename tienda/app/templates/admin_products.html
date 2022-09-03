@@ -18,7 +18,7 @@
         <nav class="nav__bar">
             <div class="nav__bar_marca">
                 <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="nav__bar_img-logo">
-                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search">
+                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search-2">
             </div>
             <div class="header__menu">
                 <div class="header__menu--profile">
@@ -33,12 +33,12 @@
         </nav>
     </header>
     <main class="main__admin-products">
-        <section class="container">
+        <section class="container container__principal">
             <div class="d-flex justify-content-between align-items-center container__table-principal">
-                <p class="">Productos Favoritos Vigentes</p>
+                <p class="table__favorite_products-title">Productos Favoritos Vigentes</p>
                 <a href="/products/add" class="btn btn-success">Añadir nuevo Producto</a>
             </div>
-            <table class="table table-hover mt-3">
+            <table class="table table-hover mt-3 table__favorites">
                 <thead>
                     <tr class="table__favorite_products_headers">
                         <th>Nombre Producto</th>
@@ -59,8 +59,8 @@
                                     <td class="table__product_description">{{product.description}}</td>
                                     <td class="text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
                                     <td class="text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
-                                    <td>
-                                        <a href="/edit/product/{{product.id}}" class="btn btn-warning">Editar</a> |
+                                    <td class="d-flex justify-content-center">
+                                        <a href="/edit/product/{{product.id}}" class="btn btn-warning table__product_button">Editar</a>
                                         <a href="/delete/product/{{product.id}}" class="btn btn-danger">Borrar</a>
                                     </td>
                                 {% endif %}
@@ -74,7 +74,7 @@
             <br>
             <table class="table table-hover table__general_products">
                 <thead>
-                    <h4 class="text-left">Productos Generales Vigentes</h4>
+                    <h4 class="text-left table__general_products-title">Productos Generales Vigentes</h4>
                     <tr class="table__favorite_products_headers">
                         <th>Nombre Producto</th>
                         <th>Imagen</th>
@@ -94,8 +94,8 @@
                                     <td class="table__product_description">{{product.description}}</td>
                                     <td class="text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
                                     <td class="text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
-                                    <td>
-                                        <a href="/edit/product/{{product.id}}" class="btn btn-warning">Editar</a> |
+                                    <td class="d-flex justify-content-center table__product_td_buttons">
+                                        <a href="/edit/product/{{product.id}}" class="btn btn-warning table__product_button">Editar</a>
                                         <a href="/delete/product/{{product.id}}" class="btn btn-danger">Borrar</a>
                                     </td>
                                 {% endif %}

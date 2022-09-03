@@ -186,3 +186,66 @@
     background-color: var(--background-logo);
     color: var(--text-links-nav);
 }
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .section_home {
+        margin: 0;
+    }
+
+    .section__container_category {
+        margin: 50px 10px 0px 30px;
+        width: 700px;
+    }
+
+    .section__tittle_category {
+        width: 700px;
+    }
+
+    .section__tittle_category h3 {
+        font-size: 22px;
+    }
+
+    /*
+    .section__tittle_category2 {
+        margin: 0;
+    }
+
+    .section__tittle_category2 h3 {
+        font-size: 22px;
+        margin: 0 480px 15px 0;
+    }
+    */
+
+    .section__products_category {
+        margin: 10px 0px 60px 0px;
+        padding: 0;
+        width: 700px;
+    }
+
+    .section__products_product-description img {
+        height: 174px;
+        width: 164px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hidde-product {
+        display: none;
+    }
+
+    .cookie {
+        height: 100px;
+    }
+    
+    .cookie__alert {
+        margin: 10px 0px 8px 15px;
+    }
+    
+    .cookie__text p {
+        font-size: 14px;
+        margin: 10px 0px 10px 0px;
+        text-align: justify;
+        width: 450px;
+    }
+}

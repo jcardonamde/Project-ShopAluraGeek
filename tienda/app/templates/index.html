@@ -20,7 +20,7 @@
             <div class="nav__bar_marca">
                 <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"
                     class="nav__bar_img-logo" />
-                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search" />
+                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search-home" />
             </div>
             <div>
                 <a href="/login_user" class="btn btn-outline-primary nav__bar_login-button">Login</a>
@@ -41,7 +41,8 @@
                     <div class="banner__ppal_description">
                         <h1>Septiembre Promocional</h1>
                         <p>Productos seleccionados con 33% de descuento</p>
-                        <input type="submit" value="Ver Consolas" class="btn btn-primary" />
+                        <input type="submit" value="Ver Consolas" class="btn btn-primary btn__banner_ppal_1" />
+                        <input type="submit" value="Ver Consolas en Descuentos" class="btn btn-primary btn__banner_secondary_1" />
                     </div>
                 </div>
                 <div class="carousel-item banner__ppal">
@@ -49,7 +50,8 @@
                     <div class="banner__ppal_description2">
                         <h1>Elige tu lado</h1>
                         <p>Despierta la fuerza en tu interior</p>
-                        <input type="submit" value="Únete" class="btn btn-outline-light" />
+                        <input type="submit" value="Únete" class="btn btn-outline-light btn__banner_ppal_2" />
+                        <input type="submit" value="Únete y elige el lado tu fuerza" class="btn btn-primary btn__banner_secondary_2" />
                     </div>
                 </div>
                 <div class="carousel-item banner__ppal">
@@ -62,6 +64,7 @@
                     </div>
                     <div class="banner__ppal_description3-btn">
                         <input type="submit" value="Descubrelos Ahora" class="btn btn-outline-warning banner__ppal_description3-button" />
+                        <input type="submit" value="Ver Consolas en Descuentos" class="btn btn-primary btn__banner_secondary_3" />
                     </div>
                 </div>
             </div>
@@ -103,14 +106,14 @@
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
                             alt="producto star wars 5" />
                         <p class="section__product_name">Producto XYZ</p>
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             alt="producto star wars 6" />
                         <p class="section__product_name">Producto XYZ</p>
@@ -155,13 +158,13 @@
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="/static/imgs/products_categories/consola5.jpg" alt="producto consolas 5" />
                         <p class="section__product_name">Consola XYZ</p>
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="https://images.unsplash.com/photo-1577583113753-ca7e95d1bdc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             alt="producto consolas 6" />
                         <p class="section__product_name">Game Boy Color</p>
@@ -207,13 +210,13 @@
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="/static/imgs/products_categories/diversos5.jpg" alt="producto geek 5" />
                         <p class="section__product_name">Control y consola XYZ</p>
                         <p class="section__product_price">$ 60.00</p>
                         <a href="/view/product" class="section__product_see-product">Ver producto</a>
                     </div>
-                    <div class="section__products_product-description">
+                    <div class="section__products_product-description hidde-product">
                         <img src="https://images.unsplash.com/photo-1609372332255-611485350f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                             alt="producto geek 6" />
                         <p class="section__product_name">Producto XYZ</p>

@@ -85,3 +85,10 @@ body {
     color: var(--text-content-hover1);
     font-weight: bold;
 }
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .container__register_product {
+        height: 75vh;
+    }
+}

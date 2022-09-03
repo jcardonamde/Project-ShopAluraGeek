@@ -45,3 +45,133 @@ body {
     font-size: 18px;
     text-align: justify;
 }
+
+.section__products_category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section__products_product-description {
+    cursor: pointer;
+    overflow: hidden;
+    /*position: relative;*/
+    margin-right: 10px;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.section__products_product-description img {
+    border-radius: 15px;
+    cursor: pointer;
+    height: 180px;
+    object-fit: fill;
+    width: 180px;
+}
+
+.section__products_category:hover .section__products_product-description {
+    opacity: 0.3;
+}
+
+.section__products_category:hover .section__products_product-description:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.section__products_product-description:hover ~ .section__products_product-description {
+    transform: translate3d(20px, 0, 0);
+}
+
+.section__product_name {
+    color: var(--text-content-product-name);
+    font-family: var(--Raleway);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.section__product_price {
+    color: var(--text-content-product-price);
+    font-family: var(--Raleway);
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.section__product_see-product {
+    color: var(--text-content-product-see);
+    cursor: pointer;
+    font-family: var(--Raleway);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section__product_see-product:hover {
+    color: var(--text-content-hover2);
+}
+
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .container__view_product {
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+        margin-right: 40px;
+        width: 680px;
+    }
+
+    .container__view_product-img {
+        height: 260px;
+        margin-left: 0;
+        width: 350px;
+    }
+    
+    .container__view_product-description {
+        height: 260px;
+        margin-left: 5px;
+        margin-top: 0;
+    }
+
+    .container__view_product-description h4 {
+        font-size: 22px;
+    }
+
+    .container__view_product-description-price {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .container__view_product-description-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .section__tittle_category2 {
+        margin: 0;
+        width: 680px;
+    }
+
+    .section__tittle_category2 h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .section__products_category {
+        margin: 0;
+        padding: 0;
+        width: 680px;
+    }
+
+    .section__products_product-description img {
+        height: 174px;
+        width: 164px;
+    }
+
+    .hidde-product {
+        display: none;
+    }
+}

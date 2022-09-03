@@ -15,7 +15,7 @@
     margin: 0 150px;
 }
 
-.nav__bar_search {
+.nav__bar_search, .nav__bar_search-2, .nav__bar_search-home {
     background-color: var(--text-search-bar);
     background-image: url('/static/imgs/search_dark.png');
     background-position: 375px;
@@ -29,7 +29,7 @@
     width: 410px;
 }
 
-.nav__bar_search:focus {
+.nav__bar_search:focus, .nav__bar_search-2:focus, .nav__bar_search-home:focus {
     outline: none;
     background-image: none;
 }
@@ -143,7 +143,7 @@
     margin-top: 10px;
 }
 
-.banner__ppal_description input, .banner__ppal_description2 input {
+.btn__banner_ppal_1, .btn__banner_ppal_2 {
     border-radius: 0;
     font-family: var(--Raleway);
     height: 50px;
@@ -193,7 +193,7 @@
     width: 170px;
 }
 
-.banner__ppal_description input:hover, .banner__ppal_description2 input:hover, .banner__ppal_description3-button:hover {
+.btn__banner_ppal_1:hover, .btn__banner_ppal_2:hover, .banner__ppal_description3-button:hover, .btn__banner_secondary_1:hover, .btn__banner_secondary_2:hover, .btn__banner_secondary_3:hover {
     background-color: var(--background-hover-button);
     border: 2px solid var(--text-content-hover1);
     color: var(--text-content-hover1);
@@ -202,8 +202,12 @@
     text-align: center;
 }
 
-.banner__ppal_description input:focus, .banner__ppal_description2 input:focus, .banner__ppal_description3 input:focus {
+.btn__banner_ppal_1:focus, .btn__banner_ppal_2:focus, .banner__ppal_description3 input:focus, .btn__banner_secondary_1:focus, .btn__banner_secondary_2:focus, .btn__banner_secondary_3:focus {
     box-shadow: none;
+}
+
+.btn__banner_secondary_1, .btn__banner_secondary_2, .btn__banner_secondary_3 {
+    visibility: hidden;
 }
 
 /*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
@@ -221,7 +225,61 @@
         margin: 0 0 0 15px;
     }
 
+    .nav__bar_search-2 {
+        margin: 0 0 0 10px;
+        width: 360px;
+    }
+
+    .nav__bar_search-home {
+        margin: 0 0 0 15px;
+        width: 310px;
+    }
+
+    .nav__bar_login-button {
+        margin: 0 0 0 35px;
+    }
+
     .nav__bar_logo_home {
         margin: 0 0 0 50px;
+    }
+
+    .header__menu--profile {
+        margin: 0;
+        text-align: right;
+    }
+
+    .header__menu--profile p {
+        margin: 3px 5px 0 5px;
+        width: 100%;
+    }
+
+    .header__menu--profile img {
+        margin: 0;
+    }
+
+    .banner__ppal_description h1, .banner__ppal_description p, .banner__ppal_description2 h1, .banner__ppal_description2 p, .banner__ppal_description3-title h1, .banner__ppal_description3-subtitle p  {
+        display: none;
+    }
+
+    .btn__banner_ppal_1, .btn__banner_ppal_2, .banner__ppal_description3-button {
+        display: none;
+    }
+
+    .btn__banner_secondary_1, .btn__banner_secondary_2, .btn__banner_secondary_3 {
+        visibility: visible;
+    }
+
+    .btn__banner_secondary_1 {
+        height: 50px;
+        position: absolute;
+        top: -100px;
+        left: -150px;
+    }
+
+    .btn__banner_secondary_2 {
+        height: 50px;
+        position: absolute;
+        top: -130px;
+        left: 200px;
     }
 }

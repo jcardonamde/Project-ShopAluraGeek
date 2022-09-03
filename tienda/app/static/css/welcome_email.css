@@ -1,0 +1,30 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container__principal h1 {
+    font-size: 22px;
+    font-family: 600;
+    margin-top: 15px;
+}
+
+.container__principal h2 {
+    font-size: 18px;
+}
+
+.container__principal p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.container__principal img {
+    height: 400px;
+    width: 550px;
+    
+}
+
+.container__principal_footer {
+    font-weight: 600;
+    margin-top: 15px;
+}
