@@ -202,7 +202,7 @@
     text-align: center;
 }
 
-.btn__banner_ppal_1:focus, .btn__banner_ppal_2:focus, .banner__ppal_description3 input:focus, .btn__banner_secondary_1:focus, .btn__banner_secondary_2:focus, .btn__banner_secondary_3:focus {
+.btn__banner_ppal_1:focus, .btn__banner_ppal_2:focus, .banner__ppal_description3-button:focus, .btn__banner_secondary_1:focus, .btn__banner_secondary_2:focus, .btn__banner_secondary_3:focus {
     box-shadow: none;
 }
 

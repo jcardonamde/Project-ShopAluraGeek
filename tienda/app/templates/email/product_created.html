@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
-    <title>.:Bienvenid@ Alura Geek Shop:.</title>
+    <title>.:Producto Creado - Alura Geek Shop:.</title>
     <style>
         body {
             background-color: #E5E5E5;
@@ -22,18 +22,9 @@
             margin-top: 15px;
         }
 
-        .container__principal h2 {
-            font-size: 18px;
-        }
-
         .container__principal p {
-            font-size: 14px;
+            font-size: 15px;
             margin-top: 20px;
-        }
-
-        .container__principal img {
-            height: 400px;
-            width: 550px;
         }
 
         .container__principal_footer {
@@ -44,11 +35,9 @@
 </head>
 <body>
     <div class="container container__principal">
-        <h1>¡Bienvenido a Alura Geek Shop!</h1>
-        <h2>Hola {{request.form['name']}}, nos encanta tenerte aquí.</h2>
-        <p>Deseamos que puedas disfrutar de esta gran experiencia de tener a tu disposición los mejores <br> productos de todos los personajes que han alimentado nuestra imaginación desde pequeños.</p>
-        <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Logo Alura Geek Shop">
-        <p class="container__principal_footer">Para obtener descuentos y explorar todo nuestro catalogo visita <a href="http://54.86.31.38/" target="_blank">Alura Geek Shop</a></p>
+        <h1>El producto se creo correctamente</h1>
+        <p>Este correo es para confirmar que el producto {{request.form['name_prod']}} ya se encuentra añadido a tu perfil de administración de publicaciones.</p>
+        <p class="container__principal_footer">Para visualizar cambios u obtener más información visita <a href="http://54.86.31.38/" target="_blank">Alura Geek Shop</a></p>
     </div>
 </body>
 </html>
