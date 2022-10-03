@@ -1,0 +1,42 @@
+body {
+    background-color: var(--background-main);
+    font-family: var(--Raleway);
+}
+
+.container__register_product {
+    height: 120vh;
+    width: 423px;
+}
+
+.container__product_name, .container__product_price, .container__product_category, .container__product_publication-expiration {
+    height: 55px;
+}
+
+.container__product_category-root {
+    color: var(--text-content-product-category);
+}
+
+.container__product_description, .container__product_url-img {
+    height: 85px;
+    resize: none;
+}
+
+.container__add_product-button {
+    font-size: 18.5px;
+    font-weight: 600;
+}
+
+.container__add_product-button:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-weight: bold;
+}
+
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .container__register_product {
+        height: 75vh;
+    }
+}

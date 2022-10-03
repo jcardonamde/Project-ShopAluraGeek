@@ -5,37 +5,24 @@ body {
 
 .container__register {
     height: 590px;
-    margin-top: 20px;
-    padding: 0px;
     width: 423px;
 }
 
-.container__register_label {
-    font-family: var(--Raleway);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+.container__update_register_user {
+    height: 630px;
+    width: 423px;
 }
 
 .container__alerta_register {
-    margin: 0;
-    text-align: center;
     font-size: 15px;
 }
 
 .container__register_name, .container__register_last-name, .container__register_email, .container__register_pswd, .container__register_confirm-pswd {
-    font-family: var(--Raleway);
-    font-size: 16px;
     height: 55px;
-    margin-top: 15px;
-    width: 100%;
 }
 
 .container__register_button, .container__cancel_button {
     font-size: 18.5px;
-    font-weight: 600;
-    margin-top: 10px;
-    width: 100%;
 }
 
 .container__register_button:hover {

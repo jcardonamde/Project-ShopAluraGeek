@@ -6,53 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/bases.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/login_user.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/home/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/users/login_user.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/home/footer.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>.: Log in | Shop Alura Geek :.</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'imgs/favicon.ico') }}">
 </head>
 <body>
     <header>
-        <nav class="nav__bar">
-            <div class="nav__bar_marca">
-                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="nav__bar_img-logo">
-                <input type="text" placeholder=" ¿Qué deseas buscar?" class="form-control nav__bar_search">
-            </div>
-            <div>
-                <a href="/home">
-                    <img src="/static/imgs/home_icon.png" alt="icono de regreso al home" class="nav__bar_logo_home">
-                </a>
+        <nav class="navbar navbar-expand-lg mb-1 p-4 bg-white" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="/"><img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/></a>
+                <button class="navbar-toggler nabvar-togler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="d-flex" role="search">
+                            <input class="form-control nav__bar_search-home" type="search" placeholder=" ¿Qué deseas buscar?"/>
+                        </form>
+                    </ul>
+                    <a href="/home">
+                        <img src="/static/imgs/home_icon.png" alt="icono de regreso al home" class="nav__bar_logo_home">
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container col-5 container__login">
-            <h4 class="container__login_label mt-2">Iniciar Sesión</h4>
-            <div id="mensajeAlertaLogin" class="container__alerta_login"></div>
+        <div class="container col-5 p-0 container__login">
+            <h4 class="fw-bold text-center fs-5 mt-2 container__login_label">Iniciar Sesión</h4>
+            <div id="mensajeAlertaLogin" class="text-center"></div>
             <form action="/login" method="post" class="container__login_form" id="formLogin">
                 <div class="from-group container__login_form_group">
-                    <input type="text" name="email" id="email_login" placeholder="Escriba su correo electrónico" class="form-control container__login_email">
-                    <input type="password" name="password" id="user_password" placeholder="Escriba su contraseña" class="form-control container__login_pswd">
-                    <p>¿Olvidaste tu contraseña?</p>
+                    <input type="text" name="email" id="email_login" placeholder="Escriba su correo electrónico" class="form-control w-100 fs-6 mt-4 container__login_email">
+                    <input type="password" name="password" id="user_password" placeholder="Escriba su contraseña" class="form-control w-100 fs-6 mt-3 container__login_pswd">
+                    <p class="text-center mt-3 fw-semibold">¿Olvidaste tu contraseña?</p>
                 </div>
-                <input type="submit" value="Entrar" class="btn btn-primary btn-lg container__login_button">
+                <input type="submit" value="Entrar" class="btn btn-primary btn-lg fw-semibold w-100 mt-3 fs-5 container__login_button">
             </form>
-            <div class="container__register_form mt-4 ">
+            <div class="text-center mt-3 ">
                 <div class="from-group container__register_form_group">
-                    <label for="register_button" class="container__register_label">¿Aún no tienes cuenta en Shop Alura Geek?</label>
-                    <a href="/register" class="btn btn-outline-primary btn-lg container__register_button">Crear cuenta</a>
+                    <label for="register_button" class="fw-semibold">¿Aún no tienes cuenta en Shop Alura Geek?</label>
+                    <a href="/register" class="btn btn-outline-primary btn-lg w-100 mt-2 fs-5">Crear cuenta</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer__container_elements">
-            <div class="footer__elements_logo">
-                <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop" class="">
+    <footer class="d-flex flex-column footer">
+        <div class="justify-content-around w-100 footer__container_elements">
+            <div class="mt-5 footer__elements_logo">
+                <a class="navbar-brand ms-5" href="#navbar"><img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/></a>
             </div>
-            <div class="footer__elements_faq">
+            <div class="d-flex flex-column mt-5 footer__elements_faq">
                 <a href="#">Quienes somos</a>
                 <a href="#">Política de privacidad</a>
                 <a href="#">Programa de fidelidad</a>
@@ -60,18 +71,23 @@
                 <a href="#">Quiero ser franquiciado</a>
                 <a href="#">Anúncie aquí</a>
             </div>
-            <div class="form-group mb-3 footer__elements_contact_us">
-                <label for="name_person" class="footer__label_contact_us mb-2">Hable con nosotros</label>
-                <input type="text" name="name_person" id="name_person" placeholder="Nombre" class="form-control form-control-lg mb-3 footer__input_contact_us">
-                <textarea name="message" id="message" rows="3" placeholder="Escribe tu mensaje" class="form-control form-control-lg mb-2 footer__textarea_contact_us"></textarea>
-                <input type="submit" value="Enviar mensaje" class="btn btn-primary footer__button_contact_us">
+            <div class="form-group mb-3 mt-5 footer__elements_contact_us">
+                <label for="name_person" class="fw-bold mb-2 footer__label_contact_us">Hable con nosotros</label>
+                <input type="text" name="name_person" id="name_person" placeholder="Nombre"
+                    class="form-control form-control-lg mb-3 fs-6 footer__input_contact_us"/>
+                <textarea name="message" id="message" rows="3" placeholder="Escribe tu mensaje"
+                    class="form-control form-control-lg mb-2 fs-6 footer__textarea_contact_us"></textarea>
+                <input type="submit" value="Enviar mensaje" class="btn btn-primary text-center footer__button_contact_us" />
             </div>
         </div>
-        <div class="footer__created_by">
-            <a href="https://github.com/jcardonamde" target="_blank" rel="noopener noreferrer">Develop by: Jcardonamde.</a><br>
-            <p>2022</p>
+        <div class="d-flex flex-column align-items-center footer__created_by">
+            <a href="https://github.com/jcardonamde" target="_blank" rel="noopener noreferrer" class="fw-600 mt-3">Develop by:
+                Jcardonamde.</a><br />
+            <p class="fw-bold">2022</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='/js/loginUser.js') }}"></script>
 </body>
 </html>

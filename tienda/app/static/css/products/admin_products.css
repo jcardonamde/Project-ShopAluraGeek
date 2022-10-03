@@ -1,0 +1,25 @@
+body {
+    background-color: var(--background-main);
+    font-family: var(--Raleway);
+}
+
+.main__admin-products {
+    margin-top: 80px;
+}
+
+.table__product_image {
+    height: 100px;
+    width: 100px;
+}
+
+.table__product_description {
+    width: 230px;
+}
+
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    
+}
+
+

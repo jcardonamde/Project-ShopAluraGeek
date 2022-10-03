@@ -1,43 +1,28 @@
+/* Styles Containers products for Home */
 .section__container_category {
     margin: 60px 12.5%;
-    width: 76%;
-    margin-top: 35px;
 }
 
-.section__tittle_category {
-    display: flex;
-    flex-direction: row;
+.section__title_category {
     height: 40px;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.section__tittle_category2 {
-    display: flex;
-    justify-content: left;
+.section__title_category h3 {
+    color: var(--text-content-title-category);
+    font-family: var(--Raleway);
+    font-size: 32px;
 }
 
-.section__tittle_category2 h3 {
+.section__title_category2 h3 {
     color: var(--text-content-title-category);
     font-size: 32px;
-    font-weight: bold;
     height: 40px;
     margin: 0 820px 20px 0;
 }
 
-.section__tittle_category h3 {
-    color: var(--text-content-title-category);
-    font-family: var(--Raleway);
-    font-size: 32px;
-    font-weight: bold;
-}
-
 .section__see_category {
-    align-items: center;
     color: var(--text-content-see-category);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     padding: 10px;
     width: 120px;
 }
@@ -45,14 +30,6 @@
 .section__see_category p {
     font-family: var(--Raleway);
     font-size: 17px;
-    font-weight: 700;
-    margin-right: 5px;
-    margin-top: 15px;
-}
-
-.section__see_category p:hover {
-    cursor: pointer;
-    color: var(--text-content-hover2);
 }
 
 .section__see_category-row {
@@ -60,20 +37,14 @@
     width: 25px;
 }
 
-.section__see_category-row:hover {
+.section__see_category p:hover, .section__see_category-row:hover {
     cursor: pointer;
-}
-
-.section__products_category {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    color: var(--text-content-hover2);
 }
 
 .section__products_product-description {
     cursor: pointer;
     overflow: hidden;
-    /*position: relative;*/
     margin-right: 10px;
     transition: 450ms all;
     transform-origin: center left;
@@ -130,13 +101,11 @@
     color: var(--text-content-hover2);
 }
 
+/* Styles for Cookie Alert */
 .cookie {
-    align-items: center;
     background: lightgrey;
     border: 2px solid black;
-    display: flex;
     height: 90px;
-    justify-content: space-between;
     position: sticky;
     bottom: 0px;
     z-index: 1;
@@ -154,9 +123,7 @@
 
 .cookie__text p {
     font-size: 18px;
-    font-weight: 500;
     margin: 10px 0px 0px 0px;
-    text-align: center;
     width: 1200px;
 }
 
@@ -167,7 +134,6 @@
 .cookie__text p a:hover {
     cursor: pointer;
     color: var(--text-content-hover1);
-    font-weight: 600;
 }
 
 .cookie__button {
@@ -187,35 +153,21 @@
     color: var(--text-links-nav);
 }
 
-/*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
-@media screen and (max-width:768px) {
-    .section_home {
-        margin: 0;
-    }
 
+/*MediaQuerie Aplicable for screens of Tablets like Ipad 768x1024*/
+@media screen and (max-width:768px) {
     .section__container_category {
         margin: 50px 10px 0px 30px;
         width: 700px;
     }
 
-    .section__tittle_category {
+    .section__title_category {
         width: 700px;
     }
 
-    .section__tittle_category h3 {
-        font-size: 22px;
+    .section__see_category {
+        margin-left: 300px !important;
     }
-
-    /*
-    .section__tittle_category2 {
-        margin: 0;
-    }
-
-    .section__tittle_category2 h3 {
-        font-size: 22px;
-        margin: 0 480px 15px 0;
-    }
-    */
 
     .section__products_category {
         margin: 10px 0px 60px 0px;
@@ -238,14 +190,36 @@
         height: 100px;
     }
     
-    .cookie__alert {
-        margin: 10px 0px 8px 15px;
-    }
-    
     .cookie__text p {
         font-size: 14px;
-        margin: 10px 0px 10px 0px;
-        text-align: justify;
-        width: 450px;
+        margin: 10px 1px 10px 1px;
     }
 }
+
+
+/*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .section__container_category {
+        margin: 0 10px;
+        width: 350px !important;
+    }
+
+    .section__title_category {
+        width: 350px;
+    }
+
+    .section__see_category {
+        margin-left: 50px !important;
+    }
+
+    .section__products_category {
+        justify-content: start !important;
+        width: 350px !important;
+    }
+    
+    .hidde-product-smph {
+        display: none;
+    }
+}
+
+

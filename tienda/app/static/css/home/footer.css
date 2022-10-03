@@ -1,39 +1,25 @@
 footer {
-    display: flex;
-    flex-direction: column;
+    font-family: var(--Raleway);
     z-index: 2;
 }
 
 .footer__container_elements {
-    background-color: var(--background-content);
     display: flex;
     flex-direction: row;
+    background-color: var(--background-content);
     height: 380px;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.footer__elements_logo {
-    margin-top: 40px;
 }
 
 .footer__elements_logo img {
     height: 80px;
-    width: 176px;
-    object-fit: contain;
     margin-left: 120px;
-}
-
-.footer__elements_faq {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+    object-fit: contain;
+    width: 176px;
 }
 
 .footer__elements_faq a {
     color: var(--text-content-footer);
     cursor: pointer;
-    font-family: var(--Raleway);
     font-size: 16px;
     margin-bottom: 15px;
     text-decoration: none;
@@ -45,25 +31,15 @@ footer {
 }
 
 .footer__elements_contact_us {
-    margin-top: 60px;
     margin-right: 120px;
     width: 565px;
 }   
 
 .footer__label_contact_us {
     color: var(--text-content-footer);
-    font-family: var(--Raleway);
-    font-weight: bold;
-}
-
-.footer__input_contact_us {
-    font-family: var(--Raleway);
-    font-size: 16px;
 }
 
 .footer__textarea_contact_us {
-    font-family: var(--Raleway);
-    font-size: 16px;
     resize: none;
 }
 
@@ -71,7 +47,6 @@ footer {
     border-radius: 0;
     height: 50px;
     padding: 10px;
-    text-align: center;
     width: 130px;
 }
 
@@ -83,19 +58,13 @@ footer {
 }
 
 .footer__created_by {
-    align-items: center;
     background-color: var(--background-footer);
-    display: flex;
-    flex-direction: column;
     height: 80px;
 }
 
 .footer__created_by a {
     color: var(--text-content-footer);
-    font-family: var(--Raleway);
     font-size: 16px;
-    font-weight: 500;
-    margin-top: 20px;
     text-decoration: none;
 }
 
@@ -104,48 +73,64 @@ footer {
 }
 
 .footer__created_by p {
-    font-family: var(--Raleway);
     font-size: 16px;
-    font-weight: bold;
     margin-top: -25px;
 }
+
 
 /*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
 @media screen and (max-width:768px) {
     .footer__container_elements {
         display: flex;
         flex-direction: column;
-        position: relative;
-        margin-top: 30px;
+        flex-wrap: wrap;
+        height: 440px;
     }
-
+    
     .footer__elements_logo {
-        margin: 80px 0 0 0;
+        margin: 0 !important;
     }
 
     .footer__elements_logo img {
-        margin: 0 0 0 30px;
+        margin: 40px 0 0 0;
     }
 
     .footer__elements_faq {
-        margin: 0 0 100px 30px;
+        margin: 0 0 80px 50px !important;
+        width: 35%;
     }
 
     .footer__elements_contact_us {
-        margin: 0;
-        width: 58%;
-        position: absolute;
-        left: 300px ;
-        bottom: 80px;
-    }
-
-    .footer__button_contact_us {
-        height: 45px;
-        margin-left: 3px;
-        width: 160px;
+        margin-bottom: 150px !important;
+        width: 52%;
     }
 }
 
-@media screen and (max-width: 320px) {
-    
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .footer__container_elements {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        margin: 0;
+        flex-wrap: nowrap;
+        align-items: center !important;
+    }
+
+    .footer__elements_logo {
+        width: 100%;
+    }
+
+    .footer__elements_faq {
+        align-items: center;
+        width: 50%;
+        margin: 20px 20px !important;
+    }
+
+    .footer__elements_contact_us {
+        width: 100%;
+        margin-top: 20px !important
+    }
+
 }

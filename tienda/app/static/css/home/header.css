@@ -1,0 +1,252 @@
+/* Styles NavBar for Home */
+.nav__bar_search-home, .nav__bar_search, .nav__bar_search-2 {
+    background-color: var(--text-search-bar);
+    background-image: url('/static/imgs/search_dark.png');
+    background-position: 375px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: 2px solid var(--text-search-bar);
+    border-radius: 20px;
+    font-family: var(--Raleway);
+    font-size: 15px;
+    margin-left: 40px;
+    width: 410px;
+}
+
+.nav__bar_search-home:focus, .nav__bar_search:focus, .nav__bar_search-2:focus {
+    outline: none;
+    background-image: none;
+}
+
+.nav__bar_login-button {
+    font-size: 17px;
+    width: 9.375rem;
+}
+
+
+/* Styles NavBar for Login, Register, AdminProducts */
+.nav__bar_logo_home {
+    height: 50px;
+    margin-right: 140px;
+    width: 50px;
+}
+
+.header__menu--profile {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin-right: 8px;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 65px;
+}
+
+.header__menu--profile p {
+    color: var(--text-content-user-name);
+    margin: 0px;
+    padding: 0;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    margin-left: 40px;
+    padding: 0px;
+    position: absolute;
+    text-align: right;
+    width: 100px;
+}
+
+.header__menu li {
+    margin-top: 5px;
+}
+
+.header__menu li a {
+    color: var(--text-content-user-name);
+    text-decoration: none;
+}
+
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+
+/* Styles for Banner Section */
+.banner__img-slider {
+    height: 540px;
+    object-fit: fill;
+}
+
+.banner__ppal_description1 {
+    left: 100px;
+    top: 140px;
+}
+
+.banner__ppal_description2 {
+    left: 50px;
+}
+
+.banner__ppal_description-text1 {
+    color: var(--text-content-hover1);
+}
+
+.banner__ppal_description-text2, .banner__ppal_description-text3 {
+    color: var(--text-content);
+}
+
+.btn__banner_ppal_1, .btn__banner_ppal_2 {
+    border-radius: 0;
+    font-family: var(--Raleway);
+    height: 50px;
+    padding: 10px;
+    width: 130px;
+}
+
+.btn__banner_ppal_3 {
+    border-radius: 0;
+    font-family: var(--Raleway);
+    height: 50px;
+    padding: 10px;
+    width: 300px;
+}
+
+.btn__banner_ppal_1:hover, .btn__banner_ppal_2:hover, .btn__banner_ppal_3:hover, .btn__banner_secondary_1:hover, .btn__banner_secondary_2:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-family: var(--Raleway);
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn__banner_secondary_3:hover {
+    background-color: var(--background-hover-button);
+    border: 2px solid var(--text-content-hover1);
+    color: var(--text-content-hover1);
+    font-family: var(--Raleway);
+    font-weight: bold;
+    text-align: center;
+    width: 310px;
+}
+
+.btn__banner_ppal_1:focus, .btn__banner_ppal_2:focus, .btn__banner_ppal_3:focus, .btn__banner_secondary_1:focus, .btn__banner_secondary_2:focus, .btn__banner_secondary_3:focus {
+    box-shadow: none;
+}
+
+.btn__banner_secondary_1, .btn__banner_secondary_2, .btn__banner_secondary_3 {
+    visibility: hidden;
+}
+
+
+/*MediaQuerie Aplicable for screens of Tablets like Ipad 768x1024*/
+@media screen and (max-width:768px) {
+    .nav__bar_search {
+        margin: 0 0 0 15px;
+    }
+
+    .nav__bar_search-2 {
+        margin: 0 0 0 10px;
+        width: 360px;
+    }
+
+    .nav__bar_search-home {
+        margin: 0 0 0 15px;
+        width: 310px;
+    }
+
+    .nav__bar_login-button {
+        margin: 0 0 0 35px;
+    }
+
+    .nav__bar_logo_home {
+        margin: 0 0 0 50px;
+    }
+
+    .header__menu--profile {
+        margin: 0;
+        text-align: right;
+    }
+
+    .header__menu--profile p {
+        margin: 3px 5px 0 5px;
+        width: 100%;
+    }
+
+    .header__menu--profile img {
+        margin: 0;
+    }
+
+    .banner__ppal_description-text1, .banner__ppal_description2 h1, .banner__ppal_description2 p, .banner__ppal_description-text3  {
+        display: none;
+    }
+
+    .btn__banner_ppal_1, .btn__banner_ppal_2, .btn__banner_ppal_3 {
+        display: none;
+    }
+
+    .btn__banner_secondary_1, .btn__banner_secondary_2, .btn__banner_secondary_3 {
+        visibility: visible;
+    }
+
+    .btn__banner_secondary_1 {
+        top: 80px;
+        width: 150px;
+    }
+
+    .btn__banner_secondary_2 {
+        height: 40px;
+        width: 200px;
+        top: 130px;
+        left: 200px;
+    }
+
+    .btn__banner_secondary_3 {
+        top: 20px;
+        width: 300px;
+    }
+}
+
+
+/*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    /*
+    .nav__bar_marca {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .nav__bar_img-logo {
+        height: 28px;
+        width: 100px;
+    }
+
+    .nav__bar_search, .nav__bar_search-2, .nav__bar_search-home {
+        background-position: 0px;
+        margin-left: 220px;
+        width: 20px;
+    }
+
+    .nav__bar_login-button {
+        font-size: 14px;
+        height: 40px;
+        width: 133px;
+        margin-top: -70px;
+        margin-left: 50px;
+    }
+    */
+
+
+    .banner__img-slider {
+        object-fit: fill;
+        object-position: 80% 0;
+        height: auto;
+    }
+
+    .btn__banner_secondary_1, .btn__banner_secondary_2 {
+        visibility: hidden;
+    }
+}
