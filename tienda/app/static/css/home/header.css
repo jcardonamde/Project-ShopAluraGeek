@@ -1,5 +1,5 @@
 /* Styles NavBar for Home */
-.nav__bar_search-home, .nav__bar_search, .nav__bar_search-2 {
+.nav__bar_search-home, .nav__bar_search-products {
     background-color: var(--text-search-bar);
     background-image: url('/static/imgs/search_dark.png');
     background-position: 375px;
@@ -13,7 +13,7 @@
     width: 410px;
 }
 
-.nav__bar_search-home:focus, .nav__bar_search:focus, .nav__bar_search-2:focus {
+.nav__bar_search-home:focus, .nav__bar_search-products:focus {
     outline: none;
     background-image: none;
 }
@@ -142,18 +142,14 @@
 
 /*MediaQuerie Aplicable for screens of Tablets like Ipad 768x1024*/
 @media screen and (max-width:768px) {
-    .nav__bar_search {
-        margin: 0 0 0 15px;
-    }
-
-    .nav__bar_search-2 {
-        margin: 0 0 0 10px;
-        width: 360px;
-    }
-
     .nav__bar_search-home {
         margin: 0 0 0 15px;
         width: 310px;
+    }
+
+    .nav__bar_search-products {
+        margin: 10px 0 0 5px;
+        width: 260px;
     }
 
     .nav__bar_login-button {
@@ -164,20 +160,31 @@
         margin: 0 0 0 50px;
     }
 
+    .nav__bar_admin_products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+    }
+
+    .nav__bar_admin_products-img {
+        margin-left: 0 !important;
+    }
+
+    .div__menu_profile {
+        display: flex;
+        flex-direction: row;
+    }
+
     .header__menu--profile {
         margin: 0;
         text-align: right;
-    }
-
-    .header__menu--profile p {
-        margin: 3px 5px 0 5px;
-        width: 100%;
     }
 
     .header__menu--profile img {
         margin: 0;
     }
 
+    /* Styles MQ for Banner Section */
     .banner__ppal_description-text1, .banner__ppal_description2 h1, .banner__ppal_description2 p, .banner__ppal_description-text3  {
         display: none;
     }
@@ -211,42 +218,59 @@
 
 /*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
 @media screen and (min-width: 375px) and (max-device-width : 465px) {
-    /*
-    .nav__bar_marca {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    
-    .nav__bar_img-logo {
-        height: 28px;
-        width: 100px;
-    }
-
-    .nav__bar_search, .nav__bar_search-2, .nav__bar_search-home {
-        background-position: 0px;
-        margin-left: 220px;
-        width: 20px;
-    }
-
-    .nav__bar_login-button {
-        font-size: 14px;
-        height: 40px;
-        width: 133px;
-        margin-top: -70px;
-        margin-left: 50px;
-    }
-    */
-
-
-    .banner__img-slider {
-        object-fit: fill;
-        object-position: 80% 0;
+    .navbar {
+        padding: 10px 0 !important;
         height: auto;
     }
 
-    .btn__banner_secondary_1, .btn__banner_secondary_2 {
+    .navbar-brand {
+        margin-left: 0px !important;
+    }
+
+    .nav__bar_admin_products {
+        flex-wrap: wrap !important;
+    }
+
+    .nav__bar_search-home {
+        margin-left: 0px !important;
+        width: 100%;
+    }
+
+    .nav__bar_search-products {
+        margin: 0;
+        width: 340px;
+    }
+
+    .nav__bar_login-button {
+        margin-left: 5px;
+    }
+
+    .nav__bar_logo_home {
+        margin: 0 45%;
+    }
+
+    .div__menu_profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__menu {
+        margin-left: 170px;
+    }
+
+    .header__menu--profile p {
+        font-weight: 600;
+        width: 100px;
+    }
+
+    /* Styles MQ for Banner Section */
+    .banner__img-slider {
+        object-fit: fill;
+        object-position: 80% 0;
+        height: 320px;
+    }
+
+    .btn__banner_secondary_1, .btn__banner_secondary_2, .btn__banner_secondary_3 {
         visibility: hidden;
     }
 }

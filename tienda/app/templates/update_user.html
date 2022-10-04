@@ -17,12 +17,14 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg mb-1 p-4 bg-white" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="/"><img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <div class="container-fluid nav__bar_admin_products">
+                <a class="navbar-brand ms-5 nav__bar_admin_products-img" href="/">
+                    <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/>
+                </a>
+                <div class="navbar-collapse div__menu_profile" id="navbarSupportedContent2">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <form class="d-flex" role="search">
-                            <input class="form-control nav__bar_search-2" type="search" placeholder=" ¿Qué deseas buscar?"/>
+                            <input class="form-control nav__bar_search-products" type="search" placeholder=" ¿Qué deseas buscar?"/>
                         </form>
                     </ul>
                     <div class="header__menu">

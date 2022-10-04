@@ -18,12 +18,14 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg mb-1 p-4 bg-white" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="/"><img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <div class="container-fluid nav__bar_admin_products">
+                <a class="navbar-brand ms-5 nav__bar_admin_products-img" href="/">
+                    <img src="{{ url_for('static', filename = 'imgs/Logo.png') }}" alt="Logo Alura Geek Shop"/>
+                </a>
+                <div class="navbar-collapse div__menu_profile" id="navbarSupportedContent2">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <form class="d-flex" role="search">
-                            <input class="form-control nav__bar_search-2" type="search" placeholder=" ¿Qué deseas buscar?"/>
+                            <input class="form-control nav__bar_search-products" type="search" placeholder=" ¿Qué deseas buscar?"/>
                         </form>
                     </ul>
                     <div class="header__menu">
@@ -42,18 +44,19 @@
     </header>
     <main class="main__admin-products">
         <section class="container container__principal">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center table__favorites_header">
+                <a href="/products/add" class="btn btn-success btn__add_product_smph">Añadir</a>
                 <h4 class="fs-4 fw-semibold">Productos Favoritos Vigentes</h4>
-                <a href="/products/add" class="btn btn-success">Añadir nuevo Producto</a>
+                <a href="/products/add" class="btn btn-success btn__add_product">Añadir nuevo Producto</a>
             </div>
-            <table class="table table-hover mt-3 table__favorites">
+            <table class="table table-hover table-responsive mt-3 table__favorites">
                 <thead>
                     <tr class="text-center">
                         <th>Nombre Producto</th>
                         <th>Imagen</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Fecha caducidad Publicación</th>
+                        <th class="column_table">Descripción</th>
+                        <th class="column_table">Precio</th>
+                        <th class="column_table">Fecha caducidad Publicación</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -64,9 +67,9 @@
                                 {% if product.publication_expiration > product.time_validator() %}
                                     <td>{{product.name_prod}}</td>
                                     <td><img src="{{product.url_img}}" alt="imagen producto" class="table__product_image"></td>
-                                    <td class="table__product_description">{{product.description}}</td>
-                                    <td class="text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
-                                    <td class="text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
+                                    <td class="row_table table__product_description">{{product.description}}</td>
+                                    <td class="row_table text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
+                                    <td class="row_table text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
                                     <td class="d-flex justify-content-center" style="height: auto;">
                                         <a href="/edit/product/{{product.id}}" class="btn btn-warning me-2">Editar</a>
                                         <a href="/delete/product/{{product.id}}" class="btn btn-danger">Borrar</a>
@@ -80,15 +83,15 @@
             <hr>
             <br>
             <br>
-            <table class="table table-hover mt-4 table__general_products">
+            <table class="table table-hover table-responsive mt-4 table__general_products">
                 <thead>
                     <h4 class="text-left fs-4 fw-semibold">Productos Generales Vigentes</h4>
                     <tr class="text-center">
                         <th>Nombre Producto</th>
                         <th>Imagen</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Fecha caducidad Publicación</th>
+                        <th class="column_table">Descripción</th>
+                        <th class="column_table">Precio</th>
+                        <th class="column_table">Fecha caducidad Publicación</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -99,9 +102,9 @@
                                 {% if product.publication_expiration > product.time_validator() %}
                                     <td>{{product.name_prod}}</td>
                                     <td><img src="{{product.url_img}}" alt="imagen producto" class="table__product_image"></td>
-                                    <td class="table__product_description">{{product.description}}</td>
-                                    <td class="text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
-                                    <td class="text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
+                                    <td class="row_table table__product_description">{{product.description}}</td>
+                                    <td class="row_table text-center">{{"${:,.2f}".format(product.price_prod|float)}}</td>
+                                    <td class="row_table text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
                                     <td class="d-flex justify-content-center" style="height: auto;">
                                         <a href="/edit/product/{{product.id}}" class="btn btn-warning me-2">Editar</a>
                                         <a href="/delete/product/{{product.id}}" class="btn btn-danger">Borrar</a>
@@ -115,13 +118,13 @@
             <hr>
             <br>
             <br>
-            <table class="table table-hover w-50 mt-4">
+            <table class="table table-hover table-responsive w-50 mt-4 table__expire_products">
                 <h4 class="fs-4 fw-semibold">Publicaciones Expiradas</h4>
                 <thead>
                     <tr class="text-center">
                         <th>Nombre Producto</th>
                         <th>Foto Producto</th>
-                        <th>Precio</th>
+                        <th class="column_table">Precio</th>
                         <th>Fecha que expiro la Publicación</th>
                     </tr>
                 </thead>
@@ -131,7 +134,7 @@
                             {% if product.publication_expiration < product.time_validator() %}
                                 <td>{{product.name_prod}}</td>
                                 <td><img src="{{product.url_img}}" alt="imagen producto" class="table__product_image"></td>
-                                <td>{{"${:,.2f}".format(product.price_prod|float)}}</td>
+                                <td class="row_table">{{"${:,.2f}".format(product.price_prod|float)}}</td>
                                 <td class="text-center">{{product.publication_expiration.strftime('%d-%m-%Y')}}</td>
                             {% endif %}
                         </tr>

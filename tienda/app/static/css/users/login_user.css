@@ -31,3 +31,12 @@ body {
     color: var(--text-content-hover1);
     font-weight: bold;
 }
+
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .container__login {
+        padding: 10px !important;
+        width: auto;
+    }
+}

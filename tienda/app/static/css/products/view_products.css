@@ -100,8 +100,7 @@ body {
     }
 
     .container__view_product-img {
-        height: 260px;
-        margin-left: 0;
+        height: 350px;
         width: 350px;
     }
     
@@ -123,24 +122,26 @@ body {
     .container__view_product-description-text {
         font-size: 14px;
         margin-bottom: 20px;
-        width: 300px;
+        width: 310px;
     }
 
-    .section__tittle_category2 {
+    .section__title_category2 {
         margin: 0;
         width: 680px;
     }
 
-    .section__tittle_category2 h3 {
+    .section__title_category2 h3 {
         font-size: 22px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
+    /*
     .section__products_category {
         margin: 0;
         padding: 0;
         width: 680px;
     }
+    */
 
     .section__products_product-description img {
         height: 174px;
@@ -148,6 +149,51 @@ body {
     }
 
     .hidde-product {
+        display: none;
+    }
+}
+
+
+/*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .container__view_product {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .container__view_product-img {
+        width: 100% !important;
+    }
+
+    .container__view_product-description {
+        width: 100% !important;
+    }
+
+    .container__view_product-description h4 {
+        margin-top: 30px;
+    }
+
+    .container__view_product-description-price {
+        font-size: 20px;
+    }
+
+    .container__view_product-description-text {
+        width: 100% !important;
+    }
+
+    .section__title_category2 {
+        margin-top: 70px !important;
+        width: 350px;
+    }
+
+    .section__container_category {
+        margin: 0 10px;
+        width: auto !important;
+    }
+
+    .hidde-product2 {
         display: none;
     }
 }

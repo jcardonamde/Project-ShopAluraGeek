@@ -47,3 +47,19 @@ body {
     }
 }
 
+
+/*MediaQuerie Aplicable para pantallas de Tablet Tipo IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .container__register {
+        height: 600px;
+        padding: 10px !important;
+        width: auto;
+    }
+
+    .container__update_register_user {
+        height: 650px;
+        margin-top: 60px;
+        padding: 10px !important;
+        width: auto;
+    }
+}

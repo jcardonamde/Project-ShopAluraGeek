@@ -110,27 +110,33 @@ footer {
 /*MediaQuerie Aplicable para pantallas de Tablet Tipo IphoneX 375x812*/
 @media screen and (min-width: 375px) and (max-device-width : 465px) {
     .footer__container_elements {
+        align-items: center !important;
         display: flex;
         flex-direction: column;
-        height: 700px;
-        margin: 0;
         flex-wrap: nowrap;
-        align-items: center !important;
+        height: 700px;
+        width: auto;
     }
 
     .footer__elements_logo {
-        width: 100%;
+        margin-top: 50px !important;
     }
 
+    .footer__elements_logo a {
+        margin-left: 0 !important;
+    }
+    
     .footer__elements_faq {
         align-items: center;
-        width: 50%;
+        font-weight: 500;
         margin: 20px 20px !important;
+        width: 50%;
     }
 
     .footer__elements_contact_us {
+        margin-right: 0;
+        margin-top: 0px !important;
+        padding: 10px;
         width: 100%;
-        margin-top: 20px !important
     }
-
 }

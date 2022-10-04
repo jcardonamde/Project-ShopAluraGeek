@@ -7,6 +7,10 @@ body {
     margin-top: 80px;
 }
 
+.btn__add_product_smph {
+    visibility: hidden;
+}
+
 .table__product_image {
     height: 100px;
     width: 100px;
@@ -19,7 +23,43 @@ body {
 
 /*MediaQuerie Aplicable para pantallas de Tablet Tipo Ipad 768x1024*/
 @media screen and (max-width:768px) {
-    
+    .btn__add_product_smph {
+        visibility: hidden;
+    }
 }
 
 
+/*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
+@media screen and (min-width: 375px) and (max-device-width : 465px) {
+    .container__principal {
+        padding: 0p 1px !important;
+    }
+
+    .table__favorites_header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .table__favorites, .table__general_products, .table__expire_products {
+        width: 100% !important;
+        
+    }
+
+    .table > thead {
+        vertical-align: middle;
+    }
+
+    .column_table, .row_table {
+        display: none;
+    }
+
+    .btn__add_product_smph {
+        margin-bottom: 15px;
+        visibility: visible;
+    }
+
+    .btn__add_product {
+        display: none;
+    }
+}
