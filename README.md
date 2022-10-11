@@ -53,7 +53,6 @@ Desarrollado bajo el framework Flask, Backend con Python, Frontend con HTML5, CS
 -- Media Query para Ordenador, Tablet y Celulares.
 -- Efectos de transiciones en las imagenes del catalogo de productos.
 -- Personalizaciones a propiedades de los elementos en las diferentes paginas.
--- Keyframes para animaciones simples.
 -- Flexbox.
 
 :wrench:
