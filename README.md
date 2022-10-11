@@ -30,35 +30,35 @@ Desarrollado bajo el framework Flask, Backend con Python, Frontend con HTML5, CS
 :snake:
 ***PYTHON:***
 
--- POO.
--- Implementación del MVC.
--- Utilización de librerias para conexión con BD y envio de notificaciones mail.
+- [x] POO.
+- [x] Implementación del MVC.
+- [x] Utilización de librerias para conexión con BD y envio de notificaciones mail.
 
 :leopard:
 ***JAVASCRIPT:***
 
--- Validaciones con AJAX para evitar la perdida de información digitada por el usuario en caso de presentarse un error en el registro, login o administración de productos.
--- Restricción en la elección de fecha de las publicaciones para que se permita crear desde el presente dia hacia fechas posteriores.
--- Manejo del DOM aplicado en la alerta de cookies.
+- [x] Validaciones con AJAX para evitar la perdida de información digitada por el usuario en caso de presentarse un error en el registro, login o administración de productos.
+- [x] Restricción en la elección de fecha de las publicaciones para que se permita crear desde el presente dia hacia fechas posteriores.
+- [x] Manejo del DOM aplicado en la alerta de cookies.
 
 :globe_with_meridians:
 ***BOOSTRAP 5:***
 
--- Estilos para navbar, banner interactivo, botones, contenedores, footer, formularios, tablas.
--- Toggle en navbar responsive.
+- [x] Estilos para navbar, banner interactivo, botones, contenedores, footer, formularios, tablas.
+- [x] Toggle en navbar responsive.
 
 
 :art: ***CSS3:***
 
--- Media Query para Ordenador, Tablet y Celulares.
--- Efectos de transiciones en las imagenes del catalogo de productos.
--- Personalizaciones a propiedades de los elementos en las diferentes paginas.
--- Flexbox.
+- [x] Media Query para Ordenador, Tablet y Celulares.
+- [x] Efectos de transiciones en las imagenes del catalogo de productos.
+- [x] Personalizaciones a propiedades de los elementos en las diferentes paginas.
+- [x] Flexbox.
 
 :wrench:
 ***HTML5:***
 
--- Metodología BEM para clases  y componentes CSS3.
+- [x] Metodología BEM para clases  y componentes CSS3.
 
 
 <br>
