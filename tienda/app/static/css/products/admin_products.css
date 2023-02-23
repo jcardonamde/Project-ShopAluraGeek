@@ -26,13 +26,18 @@ body {
     .btn__add_product_smph {
         visibility: hidden;
     }
+
+    .container__principal {
+        margin-left: 0px !important;
+    }
 }
 
 
 /*MediaQuerie Aplicable for screens of Smartphones like IphoneX 375x812*/
 @media screen and (min-width: 375px) and (max-device-width : 465px) {
     .container__principal {
-        padding: 0p 1px !important;
+        padding: 0px 1px !important;
+        
     }
 
     .table__favorites_header {

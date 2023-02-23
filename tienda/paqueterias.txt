@@ -1,1 +1,6 @@
 pipenv install flask PyMySQL flash flask-bcrypt flask-mail python-decouple
+
+Para activar siempre el servidor web en un proyecto se deben ejecutar estos pasos:
+1. pipenv install flask
+2. pipenv shell
+3. python server.py
