@@ -2,7 +2,7 @@ from flask import Flask, session
 from flask_mail import Mail
 
 app = Flask(__name__)
-app.secret_key = "Tomorrowland.123456789***"
+app.secret_key = "config_your_secret_key"
 
 mail = Mail()
 
