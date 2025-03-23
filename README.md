@@ -1,80 +1,132 @@
 # Project-ShopAluraGeek
 
-**Te invito a ver la exploración de mi aplicación Web**
+**I invite you to watch the walkthrough of my web application:**
 
 https://www.youtube.com/watch?v=zg3Vkg1Py5M
 
 
-Vistas previas:
+👀 Previews:
 
 ![](https://raw.githubusercontent.com/jcardonamde/Project-ShopAluraGeek/main/tienda/app/static/imgs/Visual1.png)
 
 ![](https://raw.githubusercontent.com/jcardonamde/Project-ShopAluraGeek/main/tienda/app/static/imgs/Visual2.png)
 
 
-**Publicado en el topic:**
+**Published under the topic:**
 
 https://github.com/topics/challengeonealurageeklatam
 
-En esta oportunidad he realizado mi primer E-Commerce orientado a la temática Geek, integrando el Backend y el Frontend siguiendo los lineamientos basados en las historias de usuario expuestos en este reto, al igual que unos features adicionales para darle un valor agregado al aplicativo. Donde el usuario tiene acceso a crear un inicio de sesión para acceder al administrador de productos y gestionar sus publicaciones.
-
-Desarrollado bajo el framework Flask, Backend con Python, Frontend con HTML5, CSS, Boostrap 5, JavaScript, AJAX. La BD gestionada por medio de MySQL. El proyecto cuenta con las funciones del modelo CRUD.
+Project-ShopAluraGeek is my first E-Commerce platform themed around Geek culture, integrating both Backend and Frontend components. The development was based on the user stories provided in the challenge, with additional functionalities added to enhance the application's value. Users can register, log in, and manage their products through an administrative interface.
 
 
 <br>
 
-**Tecnologías utilizadas** 💻
+**Technologies Used** 💻
 
 
 
 :snake:
-***PYTHON:***
+***Backend:***
 
-- [x] POO.
-- [x] Implementación del MVC.
-- [x] Utilización de librerias para conexión con BD y envio de notificaciones mail.
-
-:leopard:
-***JAVASCRIPT:***
-
-- [x] Validaciones con AJAX para evitar la perdida de información digitada por el usuario en caso de presentarse un error en el registro, login o administración de productos.
-- [x] Restricción en la elección de fecha de las publicaciones para que se permita crear desde el presente dia hacia fechas posteriores.
-- [x] Manejo del DOM aplicado en la alerta de cookies.
-
-:globe_with_meridians:
-***BOOSTRAP 5:***
-
-- [x] Estilos para navbar, banner interactivo, botones, contenedores, footer, formularios, tablas.
-- [x] Toggle en navbar responsive.
+- [x] Object-Oriented Programming (OOP) and implementation of the Model-View-Controller (MVC) pattern.
+- [x] Flask: Web development framework.
+- [x] MySQL: Database management.
+- [x] Libraries: Database connection and email notification sending.
 
 
-:art: ***CSS3:***
+:art: ***Frontend:***
 
-- [x] Media Query para Ordenador, Tablet y Celulares.
-- [x] Efectos de transiciones en las imagenes del catalogo de productos.
-- [x] Personalizaciones a propiedades de los elementos en las diferentes paginas.
-- [x] Flexbox.
+- [x] HTML5 and CSS3: Structure and styling of the pages.
+- [x] Bootstrap 5: Responsive design and pre-defined components.
+- [x] JavaScript: Validations and dynamic functionalities.
+- [x] AJAX: Real-time validations to enhance user experience.
+
 
 :wrench:
-***HTML5:***
+***Features:***
 
-- [x] Metodología BEM para clases  y componentes CSS3.
+- [x] CRUD Model: Allows creation, reading, updating, and deletion of products.
+- [x] User Management: Registration and login to access the administrative panel.
+- [x] Dynamic Validations: Use of AJAX to prevent information loss in forms.
+- [x] Email Notifications: Sending emails for various user actions.
 
 
 <br>
 
-**Historia**
+:page_facing_up: **User Story**
 
-La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
+AluraGeek wants to reach more customers and increase its sales, so they plan to implement an e-commerce platform to take the company to the next level and embrace digital transformation.
 
-Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe contener los siguientes requisitos:
+To achieve this, they are requesting our help as developers. The e-commerce platform must meet the following requirements:
 
-* Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
-* Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
-* Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
-* Una página de producto que contiene la imagen, el nombre, la descripción y el precio.
-* Un pie de página con un formulario de contacto y otras informaciónes relevantes.
-* Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
-* Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
+* A home page that includes a login button and a search engine for browsing the products offered by the company.
+* A banner displaying discounts, promotions, or relevant information.
+* A product gallery showcasing product details such as an image, product name, price, and a link to the product description page.
+* A product details page containing the product image, name, description, and price.
+* A footer with a contact form and other relevant information.
+* A login form to authenticate users who need access to the admin menu.
+* An admin menu where users can add, edit, search, or delete products from the store.
+* The website must be responsive, ensuring that customers can easily shop using mobile devices such as tablets and smartphones.
 
-**Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles como Tablets y Smartphones.**
+<br>
+
+## Installation and Execution
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/jcardonamde/Project-ShopAluraGeek.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd Project-ShopAluraGeek
+```
+
+3. Create and activate a virtual environment:
+```bash
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+```
+
+4. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+5. Set up the database:
+* Create a MySQL database named shop_alura_geek.
+* Import the schema and initial data from the database/schema.sql file.
+
+6. Configure environment variables:
+Create a .env file in the project's root with the following variables:
+```bash
+FLASK_APP=run.py
+FLASK_ENV=development
+SECRET_KEY=your_secret_key
+DATABASE_URI=mysql+pymysql://user:password@localhost/shop_alura_geek
+```
+
+7. Start the application:
+```bash
+flask run
+```
+
+8. Access the application:
+Open your browser and visit http://127.0.0.1:5000/ to see the application in action.
+
+<br>
+
+## Contributions
+
+If you wish to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/new-feature).
+3. Make your changes and commit with descriptive messages.
+4. Push your changes to your fork (git push origin feature/new-feature).
+5. Open a Pull Request in this repository.
+
+
+   
