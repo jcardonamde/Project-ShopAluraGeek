@@ -1,11 +1,10 @@
 # Project-ShopAluraGeek
 
 **I invite you to watch the walkthrough of my web application:**
-
 https://www.youtube.com/watch?v=zg3Vkg1Py5M
 
 
-👀 Previews:
+## 👀 Previews:
 
 ![](https://raw.githubusercontent.com/jcardonamde/Project-ShopAluraGeek/main/tienda/app/static/imgs/Visual1.png)
 
@@ -13,17 +12,24 @@ https://www.youtube.com/watch?v=zg3Vkg1Py5M
 
 
 **Published under the topic:**
-
 https://github.com/topics/challengeonealurageeklatam
 
+## Description
 Project-ShopAluraGeek is my first E-Commerce platform themed around Geek culture, integrating both Backend and Frontend components. The development was based on the user stories provided in the challenge, with additional functionalities added to enhance the application's value. Users can register, log in, and manage their products through an administrative interface.
 
+<br>
+
+:wrench:
+***Features:***
+
+- [x] CRUD Model: Allows creation, reading, updating, and deletion of products.
+- [x] User Management: Registration and login to access the administrative panel.
+- [x] Dynamic Validations: Use of AJAX to prevent information loss in forms.
+- [x] Email Notifications: Sending emails for various user actions.
 
 <br>
 
 **Technologies Used** 💻
-
-
 
 :snake:
 ***Backend:***
@@ -40,16 +46,6 @@ Project-ShopAluraGeek is my first E-Commerce platform themed around Geek culture
 - [x] Bootstrap 5: Responsive design and pre-defined components.
 - [x] JavaScript: Validations and dynamic functionalities.
 - [x] AJAX: Real-time validations to enhance user experience.
-
-
-:wrench:
-***Features:***
-
-- [x] CRUD Model: Allows creation, reading, updating, and deletion of products.
-- [x] User Management: Registration and login to access the administrative panel.
-- [x] Dynamic Validations: Use of AJAX to prevent information loss in forms.
-- [x] Email Notifications: Sending emails for various user actions.
-
 
 <br>
 
